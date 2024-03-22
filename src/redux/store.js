@@ -8,7 +8,7 @@ const meddleware = [thunk];
 const store = createStore(
   rootReducer,
   initalState,
-  composeWithDevTools(applyMiddleware(...meddleware))
+  applyMiddleware(...meddleware)
 );
 
 export default store;
